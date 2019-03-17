@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Таблица1" msprop:Generator_UserTableName="Таблица1" msprop:Generator_RowDeletedName="Таблица1RowDeleted" msprop:Generator_TableClassName="Таблица1DataTable" msprop:Generator_RowChangedName="Таблица1RowChanged" msprop:Generator_RowClassName="Таблица1Row" msprop:Generator_RowChangingName="Таблица1RowChanging" msprop:Generator_RowEvArgName="Таблица1RowChangeEvent" msprop:Generator_RowEvHandlerName="Таблица1RowChangeEventHandler" msprop:Generator_TablePropName="Таблица1" msprop:Generator_TableVarName="tableТаблица1" msprop:Generator_RowDeletingName="Таблица1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Код" msprop:Generator_ColumnPropNameInRow="Код" msprop:Generator_ColumnVarNameInTable="columnКод" msprop:Generator_ColumnPropNameInTable="КодColumn" type="xs:int" />
+              <xs:element name="Преподаватель" msprop:Generator_UserColumnName="Преподаватель" msprop:Generator_ColumnPropNameInRow="Преподаватель" msprop:Generator_ColumnVarNameInTable="columnПреподаватель" msprop:Generator_ColumnPropNameInTable="ПреподавательColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="День_x0020_недели" msprop:Generator_UserColumnName="День недели" msprop:Generator_ColumnPropNameInRow="День_недели" msprop:Generator_ColumnVarNameInTable="columnДень_недели" msprop:Generator_ColumnPropNameInTable="День_неделиColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Предмет" msprop:Generator_UserColumnName="Предмет" msprop:Generator_ColumnPropNameInRow="Предмет" msprop:Generator_ColumnVarNameInTable="columnПредмет" msprop:Generator_ColumnPropNameInTable="ПредметColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Урок" msprop:Generator_UserColumnName="Урок" msprop:Generator_ColumnPropNameInRow="Урок" msprop:Generator_ColumnVarNameInTable="columnУрок" msprop:Generator_ColumnPropNameInTable="УрокColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Класс" msprop:Generator_UserColumnName="Класс" msprop:Generator_ColumnPropNameInRow="Класс" msprop:Generator_ColumnVarNameInTable="columnКласс" msprop:Generator_ColumnPropNameInTable="КлассColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Таблица1" />
+      <xs:field xpath="mstns:Код" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
